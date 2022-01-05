@@ -1,16 +1,16 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            nanpython
+longtitle:        nanpython
+author:           Anand B
+email:            betan_anand@protonmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  A GitBook for Python basics
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
-baseurl:          '/jekyll-gitbook'
+url:              ''
+baseurl:          '*'
 rss:              RSS
 
 toc:
