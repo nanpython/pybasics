@@ -1,51 +1,29 @@
-# Configurations
-title:            nanpython
-longtitle:        nanpython
-author:           Anand B
-email:            betan_anand@protonmail.com
-description: >
-  A GitBook for Python basics
+title:               Celeste
+url:                 https://nicoelayda.github.io
+baseurl:             ""
 
-version:          1.0
-gitbook_version:  3.2.3
+markdown:            kramdown
+highlighter:         rouge
 
-url:              ''
-baseurl:          ''
-rss:              RSS
+exclude:             ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'vendor/bundle']
 
-toc:
-  enabled: true
-  h_min: 1
-  h_max: 3
+permalink:           pretty
+paginate:            5
+paginate_path:       /blog/:num
 
-# markdown render engine.
-markdown:         kramdown
-kramdown:
-  auto_ids:               true
-  input:                  GFM
-  math_engine:            mathjax
-  smart_quotes:           lsquo,rsquo,ldquo,rdquo
-  toc_levels:             1..6
-  syntax_highlighter:     rouge
-  syntax_highlighter_opts:
-    guess_lang:           true
+blog:
+  truncated_preview: false
 
-syntax_highlighter_style: colorful
+sass:
+  sass_dir:          _sass
+  style:             :compressed
 
-markdown_ext:     markdown,mkdown,mkdn,mkd,md
-
-# Permalinks
-permalink:        /:categories/:year-:month-:day-:title:output_ext
-
-exclude:
-  - _drafts
-
-destination:      ./_site
-incremental:      false
-regenerate:       true
+author:
+  name:              Nico Elayda
+  url:               nicoelayda.github.io
+  email:             nico@elayda.com
 
 plugins:
-  - jekyll-feed
-  - jemoji
-
-theme: jekyll-theme-minimal
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-gist
